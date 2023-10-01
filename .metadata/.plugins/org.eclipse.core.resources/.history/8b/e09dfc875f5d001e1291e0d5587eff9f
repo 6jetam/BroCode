@@ -1,0 +1,22 @@
+package BorderLayout;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class MainFlowLayout {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,500);
+		frame.setVisible(true);
+		frame.setLayout(new FlowLayout());
+		
+//		JButton button1 = new JButton();
+		frame.add(new JButton("1"));
+
+	}
+
+}

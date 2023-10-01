@@ -1,0 +1,35 @@
+package Labels;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		ImageIcon image = new ImageIcon("/home/jetam06/Desktop/Java/projects/MyFirstProgram/src/Labels/obr.jpeg");
+		
+		JLabel label = new JLabel();//create a label
+		label.setText("Bro do you code?");//set text of label
+		label.setIcon(image);
+		
+		label.setHorizontalTextPosition(JLabel.CENTER);//set text left center right of imageicon
+		label.setVerticalTextPosition(JLabel.TOP);//set text TOP, Center, Bottomm of imageicon
+		label.setForeground(Color.BLUE);//set color
+		label.setFont(new Font("MV Boli",Font.PLAIN,20));//set font of text
+		label.setIconTextGap(20);
+		label.setBackground(Color.black); //set background color
+		label.setOpaque(true);//display background color
+		
+		JFrame frame = new JFrame();//creates a frame
+		frame.setTitle("JFRAME title"); //set a title of frame
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit out of application
+		frame.setSize(420, 420);//sets the parametre
+		frame.setVisible(true);//zviditelni sa 
+		frame.add(label);
+	}
+}

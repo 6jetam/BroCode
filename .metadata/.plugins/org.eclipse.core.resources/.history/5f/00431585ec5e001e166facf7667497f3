@@ -1,0 +1,18 @@
+package BorderLayout;
+
+import javax.swing.JFrame;
+
+public class JLayeredPaneMain {
+
+	public static void main (String[] args) {
+		
+		JLayeredPaneMain layeredPane = new JLayeredPaneMain();
+		layeredPane.set
+		
+		JFrame frame = new JFrame ("JLayeredPane");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,500);
+		frame.setLayout(null);
+		frame.setVisible(true);
+	}
+}

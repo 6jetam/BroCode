@@ -1,0 +1,15 @@
+package Generics;
+
+public class MyDoubleClass {
+	
+	Double y;
+	
+	MyDoubleClass(double y){
+		this.y =y;
+	}
+	
+	public Double getValue() {
+		return y;
+	}
+
+}

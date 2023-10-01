@@ -1,0 +1,44 @@
+package Labels;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.border.Border;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		ImageIcon image = new ImageIcon("/home/jetam06/Desktop/Java/projects/MyFirstProgram/src/Labels/obr.jpeg");
+		Border border = BorderFactory.createLineBorder(Color.GREEN,3);
+		
+		JLabel label = new JLabel();//create a label
+		label.setText("Bro do you code?");//set text of label
+		label.setIcon(image);
+		
+		label.setHorizontalTextPosition(JLabel.CENTER);//set text left center right of imageicon
+		label.setVerticalTextPosition(JLabel.TOP);//set text TOP, Center, Bottomm of imageicon
+		label.setForeground(Color.BLUE);//set color
+		label.setFont(new Font("MV Boli",Font.PLAIN,20));//set font of text
+		label.setIconTextGap(20);
+		label.setBackground(Color.black); //set background color
+		label.setOpaque(true);//display background color
+		label.setBorder(border);
+		label.setVerticalAlignment(JLabel.TOP); //set vertical position of icon + text within label
+		label.setHorizontalAlignment(JLabel.CENTER);//to iste ale horizointal
+//		label.setBounds(0, 0, 250, 250);//set x,y position within grame as well as dimensions
+		
+		JFrame frame = new JFrame();//creates a frame
+		frame.setTitle("JFRAME title"); //set a title of frame
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit out of application
+//		frame.setSize(420, 420);//sets the parametre
+//		frame.setLayout(null);
+		frame.setVisible(true);//zviditelni sa 
+		frame.add(label);
+		frame.pack();//mozno rozsirit okno aj s obhssahom , frame add (label) vzdy pred frame.pack
+	}
+}

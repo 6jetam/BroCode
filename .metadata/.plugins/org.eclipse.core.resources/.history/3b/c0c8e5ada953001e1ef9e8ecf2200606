@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Skusaj {
+
+	public static void main(String[] args) {
+		String x = "Ahoj";
+		String y = "Hi";
+		String temp = x;
+		
+		temp = x;
+		
+		
+		
+		System.out.println(y + temp);
+	}
+
+}

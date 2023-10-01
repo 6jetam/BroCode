@@ -1,0 +1,46 @@
+package Generics;
+
+public class GenericsMain {
+
+	public static void main(String[] args) {
+
+		Integer[] intArray = {1,2,34};
+		Double [] doubleArray = {5.5,4.4,3.3,2.2};
+		Character[] charArray = {'H','Y','A'};
+		String[] stringArray = {"B","O","Z"};
+		
+		displayArray(charArray);
+		displayArray(doubleArray);
+
+		
+	}
+	
+	public static void displayArray (Integer[] array) {
+		for (Integer x:array) {
+			System.out.println(x + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void displayArray (Double[] array) {
+		for (Double x:array) {
+			System.out.println(x + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void displayArray (Character[] array) {
+		for (Character x:array) {
+			System.out.println(x + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void displayArray (String[] array) {
+		for (String x:array) {
+			System.out.println(x + " ");
+		}
+		System.out.println();
+	}
+
+}

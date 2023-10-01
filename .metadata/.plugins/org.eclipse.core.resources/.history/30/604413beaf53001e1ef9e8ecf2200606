@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Skusaj {
+
+	public static void main(String[] args) {
+		String name = JOptionPane.showInputDialog("Hello, What is your name: ");
+		JOptionPane.showInternalMessageDialog(null, "Your name is " + name );
+		int age = Integer.parseInt(JOptionPane.showInputDialog("What is your age "));
+		JOptionPane.showInternalMessageDialog(null, "Your age is " + age + "years old");
+		double vyska = Double.parseDouble(JOptionPane.showInputDialog("Vasa vyska je "));
+		JOptionPane.showMessageDialog(null, "Your vyska je "  + vyska + "cm ");
+	}
+
+}

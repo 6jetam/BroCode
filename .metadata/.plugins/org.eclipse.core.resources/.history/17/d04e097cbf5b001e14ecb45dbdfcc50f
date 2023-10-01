@@ -1,0 +1,10 @@
+package BorderLayout;
+
+import javax.swing.JFrame;
+
+public class Main {
+	
+	JFrame frame = new JFrame();
+	frame.s
+		
+}

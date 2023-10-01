@@ -1,0 +1,10 @@
+package BorderLayout;
+
+public class MainFlowLayout {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+public class JOPaneMain {
+
+	public static void main(String[] args) {
+	
+//		JOptionPane.showMessageDialog(null, "Info bla bla", "title", JOptionPane.PLAIN_MESSAGE);
+//		JOptionPane.showMessageDialog(null, "Info bla bla", "title", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Info bla bla", "title", JOptionPane.QUESTION_MESSAGE);
+//		JOptionPane.showMessageDialog(null, "Info bla bla", "title", JOptionPane.WARNING_MESSAGE);
+//		JOptionPane.showMessageDialog(null, "Info bla bla", "title", JOptionPane.ERROR_MESSAGE);
+	
+	}
+
+}

@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Skusaj {
+
+	public static void main(String[] args) {
+		Scanner vstup = new Scanner (System.in);
+		System.out.println("Napis svoje meno:");
+		String name = vstup.nextLine();
+		System.out.println("Napis svoj vek:");
+		int age = vstup.nextInt();
+
+	}
+
+}

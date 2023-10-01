@@ -1,0 +1,26 @@
+package Labels;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		ImageIcon image = new ImageIcon("/home/jetam06/Desktop/Java/projects/MyFirstProgram/src/Labels");
+		
+		JLabel label = new JLabel();
+		label.setText("Bro do you code?");
+		label.setIcon(image);
+		
+		
+		
+		JFrame frame = new JFrame();//creates a frame
+		frame.setTitle("JFRAME title"); //set a title of frame
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit out of application
+		frame.setSize(420, 420);//sets the parametre
+		frame.setVisible(true);//zviditelni sa 
+		frame.add(label);
+	}
+}
